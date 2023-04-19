@@ -1,86 +1,108 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Tweeter</title>
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  </head>
-  <body>
-    <div class="header">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- підключає каскадну таблицю стилів -->
+  <link rel="icon" href="svg/icon.svg"> <!-- добавляє іконку на вкладку в браузері -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Oswald&display=swap" rel="stylesheet"> <!-- Добавляє на сайт шрифти Dongle, Oswald-->
 
-      <div class="header-Left">
-        <p class="tweet-header-text"><a class="href" href="index.html">Tweeter</a></p>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <img class="svg-home" src="svg/icon.svg">
+        </li>
+        <li>
+          <p class="ul-1">Projects</p>
+        </li>
+        <li>
+          <p class="ul-1">My Achievements</p>
+        </li>
+        <li>
+          <p class="ul-1"></p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <img class="decoration-1" src="decoration/Ellipse 1.svg">
+    <img class="decoration-2" src="decoration/Ellipse 2.svg">
+    <img class="decoration-3" src="decoration/Ellipse 4.svg">
+    <img class="decoration-4" src="decoration/Ellipse 5.svg">
+    <div class="left-side">
+      <div class="my-information">
+        <h1>Hey I'm Myroslav</h1>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ac tellus dolor. Sed et ipsum at lacus finibus lacinia. Ut eget ligula eget enim varius euismod nec vitae nibh. Mauris ipsum lacus, eleifend et lectus at, accumsan mattis neque. Sed nec orci erat. Nam convallis rhoncus augue, a pharetra risus scelerisque non. Cras gravida, augue ac convallis facilisis, libero nibh congue dolor, eget venenatis massa arcu a massa. Sed lacinia massa a maximus accumsan. Fusce libero risus, blandit non enim at, finibus maximus nisi. Ut justo lacus, hendrerit eget fringilla eget, sollicitudin non tellus.</p>
       </div>
-
-      <div class="header-center">
-        <input class="input-header" type="text" placeholder="Search">
-        <button class="button-header"><img class="image-button-header" src="images/search.svg"></button>
-      </div>
-
-      <div class="header-right">
-        <a href="user-page.html"><img class="user-photo" src="images/pinguin.jpg" alt=""></a>
-      </div>
-    </div>
-
-
-    <div class="main-grid">
-      <div class="tweet-stats">
-        <div class="home-tweet-stats">
-          <p class="text-tweet-stats">Home</p>
-          <button class="button-tweet-stats">14</button>
-        </div>
-        <div class="notifications-tweet-stats">
-          <p class="text-tweet-stats">Notifications</p>
-          <button class="button-tweet-stats">3</button>
-        </div>
-        <div class="messages-tweet-stats">
-          <p class="text-tweet-stats">Messages</p>
-          <button class="button-tweet-stats">5</button>
-       </div>
-      </div>
-
-      <div class="tweet-post">
-        <div class="tweet">
-          <img class="tweet-post-author-photo" src="images/cat.jpg" alt="">
-          <p class="tweet-post-text">"Success is not final, failure is not fatal: it is the courage to continue that counts." - Winston Churchill</p>
-          <button class="tweet-post-button">Tweet</button>
-        </div>
-
-        <div class="tweet">
-          <img class="tweet-post-author-photo" src="images/eagle.jpg" alt="">
-          <p class="tweet-post-text">If you want to achieve greatness, stop asking for permission.</p>
-          <button class="tweet-post-button">Tweet</button>
-        </div>
-
-        <div class="tweet">
-          <img class="tweet-post-author-photo" src="images/fox.jpg" alt="">
-          <p class="tweet-post-text">"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." - Christian D. Larson</p>
-          <button class="tweet-post-button">Tweet</button>
+      <div class="my-work">
+        <p class="t-work">My way</p>
+        <div class="case">
+          <div class="date">
+            <p>2018-2022</p>
           </div>
-      
+          <div class="description">
+            <p>
+              Studying at the RoboCode school, where I received a certificate that I am a Senior Embedded</p>
+          </div>
+        </div>
+        <div class="case">
+          <div class="date">
+            2022
+          </div>
+          <div class="description">
+            Work on indie GameDev team, firstly like C++ developer, then like Recruiter
+          </div>
+        </div>
+        <div class="case">
+          <div class="date">
+
+          </div>
+          <div class="description"></div>
+        </div>
+        <div class="case">
+          <div class="date">
+
+          </div>
+          <div class="description"></div>
+        </div>
       </div>
-
-      <p class="new-friend">Add new friend now!</p>
-
-      <div class="tweet-invite-friend">
-        <div class="tweet-invite">
-          <img class="tweet-invite-author-photo" src="images/frog.jpg" alt="">
-          <p class="tweet-invite-main">Oliver <span class="tweet-invite-stats"> &#183; cat &#183; popular </span></p>
-          <button class="tweet-invite-button">Follow</button>
-        </div>
-
-        <div class="tweet-invite">
-          <img class="tweet-invite-author-photo" src="images/lion.jpg" alt="">
-          <p class="tweet-invite-main">Oliver <span class="tweet-invite-stats"> &#183; cat &#183; popular </span></p>
-          <button class="tweet-invite-button">Follow</button>
-        </div>
-
-      </div> 
-
     </div>
-  </body>
+
+    <div class="right-side">
+      <div class="personal-information">
+        <p>Full Name: Myroslav Hanuta</p>
+        <p>Address: Ukraine Uman Stefanovicha street</p>
+        <p>Contact phone:</p>
+        <p>+380916078359</p>
+        <p>+447405248977</p>
+        <p>Email: myroslavhanuta@hotmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/myroslav-hanuta-11587b26b" target="_blank">Myroslav</a></p>
+        <p>Telegram: <a href="https://t.me/myrosIav" target="_blank">Myroslav</a></p>
+
+      </div>
+      <div class="skills">
+        <p>Sociability:</p>
+        <img src="skills/75.svg">
+        <p>Front-end:</p>
+        <img src="skills/50.svg">
+        <p>Back-end:</p>
+        <img src="skills/25.svg">
+        <p>Embedded-dev:</p>
+        <img src="skills/75.svg">
+      </div>
+    </div>
+
+  </main>
+
+<script src="index.js"></script> <!-- підключає js файл до html файлу -->
+</body>
 </html>
