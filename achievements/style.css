@@ -157,7 +157,7 @@ main {
   }
 
   .case-photo {
-    transform: scale(0.65);
+    transform: scale(0.45);
 
   }
 
@@ -172,6 +172,11 @@ main {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
     width: auto;
+  }
+
+  a {
+    width: fit-content;
+    height: fit-content;
   }
   
 }
