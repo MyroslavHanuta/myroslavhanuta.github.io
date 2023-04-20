@@ -78,3 +78,54 @@ img::selection {
   color: black;
   cursor: pointer;
 }
+
+/*Main styles ------------------------------------------*/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px;
+  font-family: Dongle;
+  font-size: 30px;
+}
+
+.case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(225, 206, 77);
+  padding: 10px;
+  border-radius: 7px;
+  transition: all 0.15;
+
+}
+
+.case:hover {
+  transform: scale(1.015);
+}
+
+.photo {
+  display: inline;
+  vertical-align: top;
+  align-self: center;
+  margin: 0px;
+}
+
+.description {
+  text-align: center;
+}
+
+.photo-case {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: all 0.15s;
+}
+
+.photo-case:hover {
+  transform: scale(1.05);
+  box-shadow: none;
+  cursor: pointer;
+}
