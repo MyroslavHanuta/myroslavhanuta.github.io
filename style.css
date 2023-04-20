@@ -1,10 +1,9 @@
+/* Global style --------------------------------------- */
+
 body {
   padding: 0px;
   margin: 0px;
 }
-
-element { --font-secondary: Dongle;}
-element { --font-main: Oswald;}
 
 p {
   margin: 0px;
@@ -24,6 +23,25 @@ nav ul { /* обовязкво вказувати nav ul інакше не пр�
   margin-bottom: 50px;
 }
 
+a {color: black;}
+
+h1{ margin: 0px; font-family: Oswald,Arial; }
+
+/* Text selection ----------------------------------- */
+
+p::selection {
+  background-color: transparent;
+}
+
+h1::selection {
+  background-color: transparent;
+}
+
+img::selection {
+  background-color: transparent;
+}
+
+/* Header -------------------------------------------- */
 .svg-home {
   width: 40px;
   height: 40px;
@@ -32,12 +50,16 @@ nav ul { /* обовязкво вказувати nav ul інакше не пр�
 
 .svg-home:hover {
   cursor: pointer;
+  transform: scale(1.045);
 }
 
 .ul-1 {
   margin-left: 40px;
   font-family: Oswald, Arial;
   color: rgb(90, 90, 90);
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
 }
 
 .ul-1:hover {
@@ -45,43 +67,25 @@ nav ul { /* обовязкво вказувати nav ul інакше не пр�
   cursor: pointer;
 }
 
+.a-nav {
+  margin-left: 40px;
+  font-family: Oswald, Arial;
+  color: rgb(90, 90, 90);
+  text-decoration: none;
+}
+
+.a-nav:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Main styles -----------------------------------------------*/
+
 main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 40px;
-}
-
-.left-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-}
-
-.right-side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  width: 500px;
-}
-
-.personal-information {
-  width: fit-content;
-  padding: 20px;  
-  background-color: rgb(225, 206, 77);
-  border-radius: 7px;
-  font-family: Dongle,Arial;
-  font-size: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 50px;
-  transition: all 0.15s;
-}
-
-.personal-information:hover {
-  transform: scale(1.015);
 }
 
 .decoration-1,
@@ -112,33 +116,18 @@ main {
   left: 150px;
 }
 
-.personal-information p {
-  margin: 0px;
-}
 
-a {color: black;}
+/* Left side-------------------------------------------*/
 
-h1{ margin: 0px; font-family: Oswald,Arial; }
-
-.my-information { font-family: Dongle, Arial; font-size: 30px; margin-bottom: 50px;}
-
-.skills {
+.left-side {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 376.5px;
-  background-color: rgb(225, 206, 77);
-  padding: 20px;
-  border-radius: 7px;
-  font-family: Dongle,Arial;
-  font-size: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.15s;
+  align-items: center;
 }
 
-.skills:hover {
-  transform: scale(1.015);
-}
+.my-information { font-family: Dongle, Arial; font-size: 30px; margin-bottom: 50px;}
 
 .my-work {
   display: flex;
@@ -173,4 +162,52 @@ h1{ margin: 0px; font-family: Oswald,Arial; }
   font-family: Oswald,Arial;
   margin-bottom: 30px;
   font-size: 30px;
+}
+
+/*Right side ----------------------------------------------------*/
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 500px;
+}
+
+.personal-information {
+  width: fit-content;
+  padding: 20px;  
+  background-color: rgb(225, 206, 77);
+  border-radius: 7px;
+  font-family: Dongle,Arial;
+  font-size: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  transition: all 0.15s;
+}
+
+.personal-information:hover {
+  transform: scale(1.015);
+}
+
+.personal-information p {
+  margin: 0px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 376.5px;
+  background-color: rgb(225, 206, 77);
+  padding: 20px;
+  border-radius: 7px;
+  font-family: Dongle,Arial;
+  font-size: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.15s;
+}
+
+.skills:hover {
+  transform: scale(1.015);
 }
