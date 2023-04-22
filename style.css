@@ -3,6 +3,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  padding-top: 80px;
 }
 
 p {
@@ -10,6 +11,12 @@ p {
 }
 
 ul { list-style-type: none; } /* відключає "bullets" точки, в ненумерованому списку */
+
+header {
+  width: 100%;
+  position: fixed;
+  margin-top: -80px;
+}
 
 nav ul { /* обовязкво вказувати nav ul інакше не працює */
   display: flex;

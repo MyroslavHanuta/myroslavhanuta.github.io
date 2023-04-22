@@ -3,6 +3,7 @@
 body {
   padding: 0px;
   margin: 0px;
+  padding-top: 80px;
 }
 
 p {
@@ -23,8 +24,10 @@ nav ul { /* обовязкво вказувати nav ul інакше не пр�
   margin-bottom: 50px;
 }
 
-header{
-  width: auto;
+header {
+  width: 100%;
+  position: fixed;
+  margin-top: -80px;
 }
 
 a {color: black;}
