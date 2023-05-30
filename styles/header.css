@@ -1,0 +1,114 @@
+/* ANIMATION ----------------------------------------------------------------*/
+
+/* Animation for text ------------------------------------------------------*/
+
+.animation-text {
+  color: white;
+  font-family: 'Lato', Arial;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 200px;
+}
+
+@keyframes header-p {
+  from {
+    transform: translateY(0);
+    font-size: 200px;
+    font-weight: 400;
+  }
+  to {
+    transform: translateY(-200px);
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+.header-p {
+  animation-name: header-p;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+/* Animation for logo ------------------------------------------------------*/
+
+#logo-animated.animation-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation-name: animation-logo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+ 
+}
+
+@keyframes animation-logo {
+  from {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-280px);
+    opacity: 1;
+  }
+}
+
+/* Animation for stairs ------------------------------------------------------*/
+
+#stairs-animated.animation-stairs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  animation-name: animation-stairs;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation-stairs {
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(180px);
+    opacity: 1;
+  }
+}
+
+/* ANIMATION ----------------------------------------------------------------*/
+
+/* HEADER ----------------------------------------------------------------*/
+#header.animation-header {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 10px, 10px;
+  animation-name: header;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes header {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#social-icon { 
+  margin: 10px;
+}
+/* HEADER ----------------------------------------------------------------*/
+
+/* BODY ----------------------------------------------------------------- */
+
+/* BODY ----------------------------------------------------------------- */

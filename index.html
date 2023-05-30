@@ -4,106 +4,86 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css"> <!-- підключає каскадну таблицю стилів -->
-  <link rel="icon" href="svg/icon.svg"> <!-- добавляє іконку на вкладку в браузері -->
+  <!-- Title -->
+  <title>V.P.STAIRS</title>
+  <!---->
+
+  <!-- Connect to css -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <!---->
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Oswald&display=swap" rel="stylesheet"> <!-- Добавляє на сайт шрифти Dongle, Oswald-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <!---->
 
+  <!--Icons-->
+  <link rel="icon" href="images/icon/icon.svg">
+  <!---->
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html"><img class="svg-home" src="svg/icon.svg"></a>
-        </li>
-        <li>
-          <button class="ul-1"><a class="a-nav" href="projects/index.html">Projects</a></button>
-        </li>
-        <li>
-          <button class="ul-1"><a class="a-nav" href="achievements/index.html">My Achievements</a></button>
-        </li>
-        <li>
-          <button class="ul-1"></button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <!--Div for text for animation-->
+  <div class="animation-text">
+    <p class="header-p">V.P. STAIRS</p>
+  </div>
+  <!---->
 
+  <!--Div for logo for animation-->
+  <div id="logo-animated">
+    <img src="images/logo/vpstairs-logo.png">
+  </div>
+  <!---->
+
+  <!--Div for stair for animation-->
+  <div id="stairs-animated">
+    <img src="images/stairs/main-page-stairs.png">
+  </div>
+  <!---->
+
+  <!--Header-->
+  <header id="header">
+    <div class="social">
+      <img id="social-icon" src="images/social-network-icons/Vector (1).png">
+      <img id="social-icon" src="images/social-network-icons/Group 1.png">
+      <img id="social-icon" src="images/social-network-icons/Group 2.png">
+      <img id="social-icon" src="images/social-network-icons/Group 3.png">
+    </div>
+  </header>
+  <!---->
   <main>
 
-    <img class="decoration-1" src="decoration/Ellipse 1.svg">
-    <img class="decoration-2" src="decoration/Group 1.svg">
-    <!--<img class="decoration-3" src="decoration/Ellipse 4.svg">
-    <img class="decoration-4" src="decoration/Ellipse 5.svg">-->
-    
-    <div class="left-side">
-      <div class="my-information">
-        <h1>Hey I'm Myroslav</h1>
-        <p>I'm 16 this page is about my experience and some information about me. You can check my skill and personal information on the right side of the page, and check my experience under this text, furthermore you can see my projects on the navigation panel at the top of the page and also you can see my certification</p>
+    <div id="navigation-text">
+
+      <div class="drop-menu-button">
+        <div class="text-and-button"><a href="Products/products.html" class="navigation-text-a"><p>Products</p></a><button class="dropbtn"></button><div class="arrow"></div></button></div>
+        <div class="drop-menu">
+          <a href="Products/Staircase/staricase.html"><p>Staircase</p></a>
+        </div>
       </div>
-      <div class="my-work">
-        <p class="t-work">Experience</p>
-        <div class="case">
-          <div class="date">
-            <p>2018-2022</p>
-          </div>
-          <div class="description">
-            <p>
-              Studying at the RoboCode school, where I received a certificate that I am a Senior Embedded</p>
-          </div>
-        </div>
-        <div class="case">
-          <div class="date">
-            <p>2022</p>
-          </div>
-          <div class="description">
-            <p>Work on indie GameDev team, firstly like C++ developer, then like Recruiter</p>
-          </div>
-        </div>
-        <div class="case">
-          <div class="date">
 
-          </div>
-          <div class="description"></div>
-        </div>
-        <div class="case">
-          <div class="date">
+      <a href="Contacts/contacts.html" class="navigation-text-a"><p>Contact</p></a>
 
-          </div>
-          <div class="description"></div>
+      <div class="drop-menu-button">
+        <div class="text-and-button"><a href="About us/aboutus.html" class="navigation-text-a"><p>About us</p></a><button class="dropbtn"></button><div class="arrow"></div></button></div>
+        <div class="drop-menu">
+          <a href="About us/Terms/terms.html"><p>Terms</p></a>
+          <a href="About us/stairs&materials/stairs.html"><p>About Stairs & materials</p></a>
+          <a href="About us/videos/videos.html"><p>Videos</p></a>
         </div>
       </div>
     </div>
 
-    <div class="right-side">
-      <div class="personal-information">
-        <p>Full Name: Myroslav Hanuta</p>
-        <p>Address: Ukraine, Uman, Stefanovicha st.</p>
-        <p>Contact phone:</p>
-        <p>+380916078359</p>
-        <p>+447405248977</p>
-        <p>Email: myroslavhanuta@hotmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/myroslav-hanuta-11587b26b" target="_blank">Myroslav</a></p>
-        <p>Telegram: <a href="https://t.me/myrosIav" target="_blank">Myroslav</a></p>
-
-      </div>
-      <div class="skills">
-        <p>Sociability:</p>
-        <img src="skills/75.svg">
-        <p>Front-end:</p>
-        <img src="skills/50.svg">
-        <p>Back-end:</p>
-        <img src="skills/25.svg">
-        <p>Embedded-dev:</p>
-        <img src="skills/75.svg">
-      </div>
+    <div id="text-main">
+      <p class="text-main-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut dignissim nunc, vel iaculis libero. Cras quis orci elit. Nunc odio velit, auctor eget feugiat eu, feugiat aliquam diam. Suspendisse sit amet faucibus nisl, vel suscipit turpis. Pellentesque pulvinar lorem eu nunc ultricies, at placerat tortor tincidunt. Fusce euismod dolor nec ex lacinia ultricies. Proin semper tincidunt ipsum ac semper. Duis eget nisl tortor. Pellentesque sodales felis et dui pretium, in lacinia risus venenatis. Morbi lacus nisi, luctus ac dapibus in, gravida dignissim leo. Nunc ullamcorper urna ligula, et faucibus turpis posuere non.
+      </p>
     </div>
 
   </main>
-
-<script src="index.js"></script> <!-- підключає js файл до html файлу -->
+  
+  <script src="index.js"></script>
 </body>
 </html>

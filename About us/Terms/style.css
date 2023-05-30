@@ -1,0 +1,59 @@
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+  margin-right: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Lato, Arial;
+  font-size: 24px;
+  margin-bottom: 120px;
+}
+
+.back {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.back-text:hover {
+  color: rgb(180,180,180);
+}
+
+.back a {
+  color: white;
+  text-decoration: none;
+}
+
+.title {
+  margin-right: 15px;
+}
+
+main p{
+  font-family: Open Sans, Arial;
+}
+
+main{
+  margin: 40px 20px;
+}
+
+p::selection{
+  background-color: transparent;
+}
+b::selection{
+  background-color: transparent;
+}
